@@ -87,7 +87,7 @@ p{
 
 .section-title{
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 25px;
 }
 
 .section-title h2{
@@ -369,6 +369,10 @@ a:hover{
   color: #fff;
 }
 
+.navbar .toggle-icon-color{
+  color: var(--white);
+}
+
 .sticky{
   background: var(--white)!important;
   position: fixed;
@@ -425,7 +429,7 @@ a:hover{
 }
 
 .sticky .toggle-icon-color{
-  color: purple;
+  color: var(--purple);
 }
 
 .sticky .default-logo{
@@ -505,7 +509,7 @@ a:hover{
 }
 
 .banner-img-sizing{
-  width: 35%;
+  width: 44%;
   padding: 10px 0;
 }
 
@@ -634,6 +638,10 @@ a:hover{
   transition: all 0.3s ease 0s;
 }
 
+.service-img img{
+  margin-top: 5rem;
+}
+
 /* ===========================================
 ============ Discover Section ================  
 =========================================== */
@@ -692,6 +700,12 @@ a:hover{
   }
 }
 
+@media only screen and (max-width: 991px){
+  .how_it_works .sw::after{
+    display: none;
+  }
+}
+
 /* ===========================================
 ============= Screen Shots Section ===========
 =========================================== */
@@ -703,6 +717,7 @@ a:hover{
   background: #D6D6D6;
   display: block;
   -webkit-backface-visibility: visible;
+  backface-visibility: visible;
   transition: opacity .2s ease;
   border-radius: 30px;
 }
@@ -1040,7 +1055,7 @@ a:hover{
   margin-right: 10px;
 }
 
-.download-area .button-group img {
+.button-group img {
   max-width: 190px;
 }
 
@@ -1156,16 +1171,34 @@ footer{
   border: 1px solid var(--white);
   width: 35px;
   height: 35px;
-  border-radius: 50%;
+  border-radius: 15%;
   text-align: center;
   line-height: 35px;
   margin-right: 10px;
   display: inline-block;
 }
+.footer-logo{
+  width: 75%!important;
+}
 
-.lower-footer-icon a:hover{
-  background-color: var(--purple);
-  border-color: var(--purple);
+.lower-footer-icon .f:hover{
+  background-color: #3B5999;
+  border-color: #3B5999;
+}
+
+.lower-footer-icon .t:hover{
+  background-color: #55ACEE;
+  border-color: #55ACEE;
+}
+
+.lower-footer-icon .ins:hover{
+  background-color: #DD4B39;
+  border-color: #DD4B39;
+}
+
+.lower-footer-icon .linked:hover{
+  background-color: #00B489;
+  border-color: #00B489;
 }
 
 .footer-box img{
@@ -1173,28 +1206,36 @@ footer{
 }
 
 .footer-box h3{
-  font-size: x-large;
+  font-size: 1.9rem;
+  margin-bottom: 10px;
 }
 
 .footer-box a{
   color: var(--white);
-  font-size: 12px;
+  font-size: 17px;
+  line-height: 36px;
 }
 
 .footer-box p{
   color: var(--white);
-  font-size: 12px;
+  font-size: 17px;
 }
 
 .lower-footer p{
   color: var(--white);
-  font-size: 12px;
+  font-size: 15px;
   padding-top: 10px;
 }
 
-.contact-map iframe{
-  height: 170px;
+@media only screen and (max-width: 991px){
+  footer .button-group a img{
+    margin: 0 10px;
+  }
+  .footer-logo{
+    width: 40% !important;
+  }
 }
+
 @media only screen and (max-width:767px){
   .lower-footer{
       text-align: center;
@@ -1202,6 +1243,13 @@ footer{
   .lower-footer-icon{
       justify-content: center;
       float: none!important;
+  }
+  .lower-text{
+    text-align: center !important;
+    margin-bottom: 10px;
+  }
+  .text-body{
+    padding: 10px;
   }
 }
 @media only screen and (max-width:575px){
@@ -1212,6 +1260,10 @@ footer{
 .lower-footer-area{
   border-top: 1px solid #fff;
   padding-top: 20px;
+}
+
+footer .button-group img {
+  max-width: 150px;
 }
 
 
@@ -1443,4 +1495,10 @@ footer{
   font-weight: bold;
   font-size: 14px;
   background: transparent;
+}
+
+@media only screen and (max-width: 520px){
+  h2{
+    font-size: 2.3rem;
+  }
 }
