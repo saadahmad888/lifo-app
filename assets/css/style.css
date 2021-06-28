@@ -87,7 +87,7 @@ p{
 
 .section-title{
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 
 .section-title h2{
@@ -517,6 +517,9 @@ a:hover{
   .banner-img-sizing{
     display: none;
   }
+  .banner-content{
+    margin-top: 0px;
+  }
 }
 
 @media only screen and (min-width:992px){
@@ -531,9 +534,6 @@ a:hover{
 @media only screen and (min-width: 768px) and (max-width:991px){
   .banner-img-sizing{
     width: 70%;
-  }
-  .banner-content{
-    margin-top: 00px;
   }
 }
 
@@ -735,7 +735,9 @@ a:hover{
   -webkit-box-shadow: 0 1rem 3rem rgb(31 45 61 / 13%);
   box-shadow: 0 1rem 3rem rgb(31 45 61 / 13%);
 }
-
+.card{
+  border: 1px solid #e8e8e8;
+}
 .testimonial .text-color{
   color: var(--purple);
 }
@@ -849,7 +851,7 @@ a:hover{
 .blog{
   border-radius: 10px;
   background-color: var(--white);
-  border: 1px solid #dcdcdc;
+  border: 1px solid #e8e8e8;
   padding: 10px;
   transition: .5s all ease;
   -webkit-transition: .5s all ease;
@@ -1132,6 +1134,12 @@ footer{
   background-image: linear-gradient(326deg, #2e2c89 0%, #892bdd 74%);
   color: var(--white);
 }
+.footer-intro{
+  margin-bottom: 30px;
+}
+.footer-product-help{
+  margin-bottom: 30px;
+}
 .footer-product-help-link ul li{
   margin-bottom: 10px;
 }
@@ -1157,7 +1165,7 @@ footer{
 }
 .lower-footer{
   border-top: 1px dashed #e8e8e8;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 15px;
   padding-top: 15px;
 }
