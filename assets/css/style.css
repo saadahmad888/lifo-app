@@ -87,7 +87,7 @@ p{
 
 .section-title{
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 80px;
 }
 
 .section-title h2{
@@ -369,10 +369,6 @@ a:hover{
   color: #fff;
 }
 
-.navbar .toggle-icon-color{
-  color: var(--white);
-}
-
 .sticky{
   background: var(--white)!important;
   position: fixed;
@@ -429,7 +425,7 @@ a:hover{
 }
 
 .sticky .toggle-icon-color{
-  color: var(--purple);
+  color: purple;
 }
 
 .sticky .default-logo{
@@ -477,6 +473,10 @@ a:hover{
   background-image: var(--secondary);
 }
 
+.banner-content{
+  margin-top: 40px;
+}
+
 .main-banner .banner-content h1{
   font-weight: 600;
   font-size: 46px;
@@ -509,7 +509,7 @@ a:hover{
 }
 
 .banner-img-sizing{
-  width: 44%;
+  width: 50%;
   padding: 10px 0;
 }
 
@@ -525,12 +525,15 @@ a:hover{
   }
   .main-banner{
     margin-top: -80px;
-  }
+  } 
 }
 
 @media only screen and (min-width: 768px) and (max-width:991px){
   .banner-img-sizing{
     width: 70%;
+  }
+  .banner-content{
+    margin-top: 00px;
   }
 }
 
@@ -637,11 +640,10 @@ a:hover{
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
-
-.service-img img{
-  margin-top: 5rem;
+.service-sec-img{
+  width: 85%;
+  height: auto;
 }
-
 /* ===========================================
 ============ Discover Section ================  
 =========================================== */
@@ -700,12 +702,6 @@ a:hover{
   }
 }
 
-@media only screen and (max-width: 991px){
-  .how_it_works .sw::after{
-    display: none;
-  }
-}
-
 /* ===========================================
 ============= Screen Shots Section ===========
 =========================================== */
@@ -717,7 +713,6 @@ a:hover{
   background: #D6D6D6;
   display: block;
   -webkit-backface-visibility: visible;
-  backface-visibility: visible;
   transition: opacity .2s ease;
   border-radius: 30px;
 }
@@ -901,38 +896,6 @@ a:hover{
 }
 
 /*======================================
-============== FAQ Section =============
-======================================== */
-
-.faq .card-header .btn {
-  position: relative;
-  display: block;
-  width: 100%;
-  background: transparent;
-  color: #222;
-  text-align: left;
-}
-
-.faq .bg-inherits{
-  background-color: var(--white);
-}
-
-.faq .card-header .btn{
-  cursor: inherit;
-}
-
-.faq .card-header .btn:hover,
-.faq .card-header .btn:focus,
-.faq .card-header .btn:active {
-    -webkit-box-shadow: inherit;
-    box-shadow: inherit;
-}
-
-.faq .card-body{
-  color: #565656;
-}
-
-/*======================================
 ============== Team Section =============
 ======================================== */
 
@@ -1055,7 +1018,7 @@ a:hover{
   margin-right: 10px;
 }
 
-.button-group img {
+.download-area .button-group img {
   max-width: 190px;
 }
 
@@ -1160,7 +1123,72 @@ background: var(--purple) !important;
 /* ===========================================
 ================ Footer ================  
 =========================================== */
+.footer-logo img{
+  width: 70%;
+}
 footer{
+  padding-top: 70px;
+  background-color: #2e2c89;
+  background-image: linear-gradient(326deg, #2e2c89 0%, #892bdd 74%);
+  color: var(--white);
+}
+.footer-product-help-link ul li{
+  margin-bottom: 10px;
+}
+.footer-product-help-link ul li a{
+  color: var(--white);
+  transition: 0.5s all ease;
+}
+.footer-product-help-link ul li a:hover{
+  letter-spacing: 2px;
+}
+.footer-store-btn{
+  width: 60%;
+  height: auto;
+}
+.footer-social-icons a{
+  color: var(--white);
+  transition: 0.5s all ease;
+  font-size: 20px;
+}
+.footer-social-icons a:hover{
+  color: var(--white);
+  transform: rotateX(360deg);
+}
+.lower-footer{
+  border-top: 1px dashed #e8e8e8;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  padding-top: 15px;
+}
+@media only screen and (max-width: 991px){
+  .footer-store-btn{
+    width: 50%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 767px){
+  .footer-store-btn{
+    width: 30%;
+    height: auto;
+  }
+  .footer-logo img{
+    width: 30%;
+  }
+  .lower-footer-text{
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 576px){
+  .footer-store-btn{
+    width: 40%;
+    height: auto;
+  }
+  .footer-logo img{
+    width: 40%;
+  }
+}
+/* footer{
   background: var(--footer);
   color: var(--white);
   padding: 100px 0 0px 0;
@@ -1171,34 +1199,16 @@ footer{
   border: 1px solid var(--white);
   width: 35px;
   height: 35px;
-  border-radius: 15%;
+  border-radius: 50%;
   text-align: center;
   line-height: 35px;
   margin-right: 10px;
   display: inline-block;
 }
-.footer-logo{
-  width: 75%!important;
-}
 
-.lower-footer-icon .f:hover{
-  background-color: #3B5999;
-  border-color: #3B5999;
-}
-
-.lower-footer-icon .t:hover{
-  background-color: #55ACEE;
-  border-color: #55ACEE;
-}
-
-.lower-footer-icon .ins:hover{
-  background-color: #DD4B39;
-  border-color: #DD4B39;
-}
-
-.lower-footer-icon .linked:hover{
-  background-color: #00B489;
-  border-color: #00B489;
+.lower-footer-icon a:hover{
+  background-color: var(--purple);
+  border-color: var(--purple);
 }
 
 .footer-box img{
@@ -1206,36 +1216,28 @@ footer{
 }
 
 .footer-box h3{
-  font-size: 1.9rem;
-  margin-bottom: 10px;
+  font-size: x-large;
 }
 
 .footer-box a{
   color: var(--white);
-  font-size: 17px;
-  line-height: 36px;
+  font-size: 12px;
 }
 
 .footer-box p{
   color: var(--white);
-  font-size: 17px;
+  font-size: 12px;
 }
 
 .lower-footer p{
   color: var(--white);
-  font-size: 15px;
+  font-size: 12px;
   padding-top: 10px;
 }
 
-@media only screen and (max-width: 991px){
-  footer .button-group a img{
-    margin: 0 10px;
-  }
-  .footer-logo{
-    width: 40% !important;
-  }
+.contact-map iframe{
+  height: 170px;
 }
-
 @media only screen and (max-width:767px){
   .lower-footer{
       text-align: center;
@@ -1243,13 +1245,6 @@ footer{
   .lower-footer-icon{
       justify-content: center;
       float: none!important;
-  }
-  .lower-text{
-    text-align: center !important;
-    margin-bottom: 10px;
-  }
-  .text-body{
-    padding: 10px;
   }
 }
 @media only screen and (max-width:575px){
@@ -1260,11 +1255,7 @@ footer{
 .lower-footer-area{
   border-top: 1px solid #fff;
   padding-top: 20px;
-}
-
-footer .button-group img {
-  max-width: 150px;
-}
+} */
 
 
 /*======================================
@@ -1495,10 +1486,4 @@ footer .button-group img {
   font-weight: bold;
   font-size: 14px;
   background: transparent;
-}
-
-@media only screen and (max-width: 520px){
-  h2{
-    font-size: 2.3rem;
-  }
 }
