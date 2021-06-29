@@ -88,13 +88,16 @@ p{
 .section-title{
   text-align: center;
   margin-bottom: 50px;
+  margin-top: -12px;
 }
 
 .section-title h2{
   position: relative;
   font-weight: 600;
 }
-
+.m-adjust{
+  margin-top: -12px;
+}
 .section-title h2::after{
   position: absolute;
   content: '';
@@ -183,6 +186,9 @@ a:hover{
 }
 .pb-50{
     padding-bottom: 50px;
+}
+.pb-40{
+  padding-bottom: 40px;
 }
 .mb-30{
   margin-bottom: 30px;
@@ -543,7 +549,6 @@ a:hover{
 
 .counter .counter-content{
   text-align: center;
-  padding: 10px 0px;
 }
 
 .counter .counter-content .counter-item span{
@@ -1396,16 +1401,15 @@ footer{
 }
 .search_box .search{
  padding: 5% 5%;
-  border: none;
- height: 40px;
+ border: none;
  width: 100%;
  background-color: whitesmoke;
 }
 .search_icon{
  color: var(--purple);
  position: absolute;
- top: 36px;
- right: 30px;
+ top: 25px;
+ right: 25px;
 }
 .categories ul{
  padding-left: 0%;
