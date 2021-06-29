@@ -457,7 +457,6 @@ a:hover{
 .main-banner{
   background: rgba(0, 0, 0, 0) url(../images/welcome-bg.jpg);
   padding: 150px 0 100px;
-  min-height: 650px;
   position: relative;
   z-index: 1;
   background-position: top center;
@@ -534,6 +533,7 @@ a:hover{
   }
   .main-banner{
     margin-top: -80px;
+    min-height: 650px;
   } 
 }
 
